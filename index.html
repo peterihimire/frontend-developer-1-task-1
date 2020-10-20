@@ -107,7 +107,13 @@
                 <div class="invoice-client-address">
                   <div class="address-form">
                     <label for="client-address">client address</label><br />
-                    <textarea name="" id="" cols="30" rows="7" required></textarea>
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="7"
+                      required
+                    ></textarea>
                   </div>
                 </div>
                 <div class="invoice-details-content">
@@ -116,14 +122,14 @@
                       <label for="invoice-no">invoice NO : </label>
                       <input type="text" />
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                       <label for="invoice-no">invoice desc. : </label>
                       <input type="text" />
                     </div>
                     <div class="form-group">
                       <label for="invoice-no">invoice amt : </label>
                       <input type="text" />
-                    </div>
+                    </div> -->
                     <div class="form-group">
                       <label for="invoice-no">invoice date : </label>
                       <input type="date" />
@@ -300,7 +306,11 @@
                 </div>
               </div>
               <div class="save-btn">
-                <button class="save-btn btn" id="reg-int-btnn">
+                <button
+                  class="save-btn btn"
+                  id="reg-int-btnn"
+                  onclick="alert('Invoice saved successfully!')"
+                >
                   save invoice
                 </button>
               </div>

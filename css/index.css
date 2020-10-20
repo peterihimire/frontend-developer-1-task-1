@@ -19,9 +19,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 /***** globals *****/
 body {
   /* padding: 57px 0 0 0; */
