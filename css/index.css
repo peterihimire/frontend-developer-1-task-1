@@ -349,8 +349,7 @@ body {
 
 /***** invoice section *****/
 .invoice-section {
-  padding: 5rem 2rem ;
-
+  padding: 5rem 2rem;
 }
 .invoice-section-center {
   max-width: 117rem;
@@ -362,10 +361,10 @@ body {
   grid-row-gap: 4rem;
   grid-column-gap: 4rem; */
 }
-.invoice-content{
+.invoice-content {
   background-color: var(--mainGrey);
   box-shadow: var(--main-shadow);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: rem;
 }
 .invoice-header {
@@ -374,19 +373,41 @@ body {
   background-color: var(--primaryColor);
   color: var(--mainWhite);
   padding: 4rem;
-  border-radius: .5rem .5rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 .invoice-title {
   flex: 1;
+  display: flex;
+  align-items: flex-end;
+  font-size: 6rem;
+  text-transform: uppercase;
 }
+/* .invoice-title h3 {
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+} */
 .invoice-header-address {
   flex: 3;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  font-size: 1.2rem;
+}
+.invoice-header-address img {
+  width: 100px;
 }
 .invoice-address-list {
   display: flex;
+  list-style-type: none;
+}
+.invoice-address-item {
+  margin: 0 0 0 2rem;
+}
+.invoice-address-item a {
+  color: var(--mainWhite);
+  text-decoration: none;
 }
 .invoice-subheader {
   display: flex;
@@ -401,34 +422,53 @@ body {
   justify-content: flex-end; */
   text-align: right;
 }
-.invoice-body-header{
+.invoice-body-header {
   display: flex;
   padding: 4rem;
-
 }
-.invoice-body-header h4{
+.invoice-body-header h4 {
   color: orange;
 }
-.invoice-body-header-1{
+.invoice-body-header-1 {
   flex: 3;
 }
-.invoice-body-header-2{
+.invoice-body-header-2 {
   display: flex;
   flex: 3;
   justify-content: space-between;
 }
-.invoice-body-items{
+.invoice-body-items {
   display: flex;
-  padding: 1rem 4rem 1rem 4rem; 
+  padding: 1rem 4rem 1rem 4rem;
 }
-.invoice-body-items:nth-child(odd){
+.invoice-body-items:nth-child(odd) {
   background-color: var(--mainWhite);
 }
-.invoice-body-items p{
+.invoice-body-items p {
   font-size: 12px;
 }
-@media screen and (min-width: 1170px){
-  .invoice-content{
+.order-no {
+  display: flex;
+}
+.order-no h5 {
+  color: orange;
+}
+.sales-agent {
+  display: flex;
+}
+.sales-agent h5 {
+  color: orange;
+}
+.save-btn{
+  margin: 2rem  2rem 5rem 5rem ;
+  display: flex;
+  justify-content: flex-end;
+}
+form button{
+  background-color: var(--primaryColor) !important;
+}
+@media screen and (min-width: 1170px) {
+  .invoice-content {
     width: 70%;
     margin: 0 auto;
   }
