@@ -321,9 +321,8 @@ body {
   grid-column-gap: 4rem; */
 }
 .invoice-content {
-  background-color: var(--mainGrey);
+  /* background-color: var(--mainGrey); */
   box-shadow: var(--main-shadow);
-  /* border-radius: 0.5rem; */
 }
 .invoice-header {
   display: flex;
@@ -331,12 +330,14 @@ body {
   background-color: var(--primaryColor);
   color: var(--mainWhite);
   padding: 4rem;
+  flex-direction: column;
   /* border-radius: 0.5rem 0.5rem 0 0; */
 }
 .invoice-title {
   flex: 1;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   font-size: 6rem;
   text-transform: uppercase;
 }
@@ -350,7 +351,7 @@ body {
   flex: 3;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   font-size: 1.2rem;
 }
 .invoice-header-address img {
@@ -370,17 +371,21 @@ body {
 .invoice-subheader {
   display: flex;
   padding: 4rem;
+  flex-direction: column;
+  align-items: center;
 }
 .invoice-subheader input[type='text'], input[type='date']{
   border: none;
   border-radius: .3rem;
   padding: .5rem 1rem;
   margin: .3rem 0;
+  background-color: var(--mainGrey);
 }
 .invoice-subheader textarea{
   border: none;
   border-radius: .3rem;
   padding: .5rem 1rem;
+  background-color: var(--mainGrey);
 }
 .invoice-subheader select{
   border: none;
@@ -388,6 +393,11 @@ body {
   padding: .5rem 1rem;
   background-color: var(--mainWhite);
   margin: .3rem 0;
+  background-color: var(--mainGrey);
+}
+.invoice-subheader label{
+  color: var(--primaryColor);
+  font-weight: bold;
 }
 .invoice-client-address {
   flex: 1;
@@ -423,7 +433,7 @@ body {
   border: solid 1px var(--primaryColor);
 }
 .invoice-body-items:nth-child(odd) {
-  background-color: var(--mainWhite);
+  background-color: var(--mainGrey);
 }
 .invoice-body-items p {
   font-size: 12px;
@@ -447,6 +457,37 @@ body {
 }
 form button{
   background-color: var(--primaryColor) !important;
+}
+@media screen and (min-width: 768px){
+  .invoice-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primaryColor);
+    color: var(--mainWhite);
+    padding: 4rem;
+    flex-direction: row;
+    /* border-radius: 0.5rem 0.5rem 0 0; */
+  }
+  .invoice-subheader {
+    display: flex;
+    padding: 4rem;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .invoice-header-address {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.2rem;
+  }
+  .invoice-title {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    font-size: 6rem;
+    text-transform: uppercase;
+  }
 }
 @media screen and (min-width: 1170px) {
   .invoice-content {
