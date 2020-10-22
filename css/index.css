@@ -303,49 +303,7 @@ body {
   grid-row-gap: 4rem;
   grid-column-gap: 4rem;
 }
-/* .banner-image {
-  width: 300px;
-}
-.grid-text h1 {
-  font-size: var(--smallFont);
-}
-.banner-grid-p {
-  line-height: var(--lineHeight);
-}
-.btn-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
-/* .btn-big {
-  padding: 2rem 8rem;
-} */
-@media screen and (min-width: 768px) {
-  /* .banner-image {
-    width: 350px;
-  }
-  .banner-grid-p-div {
-    width: 350px;
-    padding: 5rem 0;
-  }
-  .grid-text h1 {
-    font-size: var(--mediumFont);
-  }
-  .btn-big {
-    padding: 2rem 8rem;
-    display: flex;
-  } */
-}
-@media screen and (min-width: 1170px) {
-  /* .banner-image {
-    width: 550px;
-  }
-  .banner-grid-p-div {
-    width: 450px;
-    padding: 5rem 0;
-  } */
-}
 /***** end of banner *****/
 
 /***** invoice section *****/
@@ -365,7 +323,7 @@ body {
 .invoice-content {
   background-color: var(--mainGrey);
   box-shadow: var(--main-shadow);
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
 }
 .invoice-header {
   display: flex;
@@ -373,7 +331,7 @@ body {
   background-color: var(--primaryColor);
   color: var(--mainWhite);
   padding: 4rem;
-  border-radius: 0.5rem 0.5rem 0 0;
+  /* border-radius: 0.5rem 0.5rem 0 0; */
 }
 .invoice-title {
   flex: 1;
@@ -523,194 +481,6 @@ form button{
   background-color: var(--mainWhite);
   width: 50%;
 }
-/* .sell-car-form {
-  background: rgba(0, 0, 0, 0.685);
-  border-radius: 0.4rem;
-  width: 90%;
-  margin: 0 auto;
-  position: absolute;
-  top: 0%;
-  left: 5%;
-}
-.sell-form-area {
-  padding: 4rem 2rem;
-}
-.personal-title-2 {
-  color: var(--mainWhite);
-  padding: 0 0 1rem 0;
-}
-.personal-details-section-2 label {
-  color: var(--mainWhite);
-}
-.sell-heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 4rem 0;
-}
 
-input[type="text"],
-input[type="email"],
-input[type="number"] {
-  width: 100%;
-  padding: 1.8rem;
-  border: none;
-  box-sizing: border-box;
-  color: var(--inputColor);
-  border-radius: 0.8rem;
-  display: inline-block;
-  margin: 1rem 0 0 0;
-} */
-/* .number-md {
-  margin: 0 0 2rem 0;
-}
-.form-btn-div {
-  display: flex;
-  justify-content: flex-end;
-
-  align-items: center;
-
-}
-.form-group {
-  width: 100%;
-  padding: 0 0 2rem 0;
-}
-.form-group label {
-  text-transform: capitalize;
-  color: var(--mainWhite);
-
-}
-.wyt {
-  color: var(--mainWhite);
-}
-.form-group-2 label {
-  text-transform: capitalize;
-}
-.form-group-4 {
-  width: 100%;
-  padding: 0 0 2rem 0;
-}
-.form-group-4 label {
-  text-transform: capitalize;
-
-}
-.drop-down {
-  width: 100%;
-}
-select {
-  width: 100%;
-  padding: 1.8rem;
-  border: none;
-  box-sizing: border-box;
-  color: var(--inputColor);
-  border-radius: 0.8rem;
-  display: inline-block;
-  margin: 1rem 0 0 0;
-}
-.input-style {
-  width: 100%;
-  padding: 1.8rem;
-  border: none;
-  box-sizing: border-box;
-  color: var(--inputColor);
-  border-radius: 0.8rem;
-  display: inline-block;
-  margin: 1rem 0 0 0;
-} */
-@media screen and (min-width: 768px) {
-  /* .sell-car-form {
-    background: rgba(0, 0, 0, 0.685);
-    border-radius: 0.4rem;
-    width: 90%;
-    margin: 0 auto;
-    position: absolute;
-    top: 0%;
-    left: 5%;
-  }
-  .sell-form-area {
-    padding: 4rem 4rem;
-  }
-  .form-group {
-    width: 100%;
-    padding: 0 0 2rem 0;
-  }
-  .personal-input-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .personal-input-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .vehicle-input-1 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-row-gap: 4rem;
-    grid-column-gap: 4rem;
-  }
-
-  .vehicle-input-3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .vehicle-input-4 {
-    width: 100%;
-  }
-  .vehicle-input-5 {
-    width: 45%;
-  }
-  input[type="text"],
-  input[type="email"],
-  input[type="number"] {
-    width: 100%;
-    padding: 1.8rem;
-    box-sizing: border-box;
-    color: var(--inputColor);
-    border-radius: 0.8rem;
-    display: inline-block;
-    margin: 1rem 0 0 0;
-  }
-  select {
-    width: 100%;
-    padding: 1.8rem;
-    border: none;
-    box-sizing: border-box;
-    color: var(--inputColor);
-    border-radius: 0.8rem;
-    display: inline-block;
-    margin: 1rem 0 0 0;
-  }
-  .input-style {
-    width: 100%;
-    padding: 1.8rem;
-    border: none;
-    box-sizing: border-box;
-    color: var(--inputColor);
-    border-radius: 0.8rem;
-    display: inline-block;
-    margin: 1rem 0 0 0;
-  } */
-}
-@media screen and (min-width: 1170px) {
-  /* .sell-car-form {
-    background: rgba(0, 0, 0, 0.685);
-    border-radius: 0.4rem;
-    width: 70%;
-    margin: 0 auto;
-    position: absolute;
-    top: 0%;
-    left: 15%;
-  }
-
-  .sell-form-area {
-    padding: 4rem 6rem;
-  } */
-}
 
 /***** end of modal   *****/
