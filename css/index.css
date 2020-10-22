@@ -32,7 +32,7 @@ body {
   background-color: var(--mainWhite);
 }
 .btn {
-  border: solid 1px var(--secondaryColor);
+  border: none;
   background: var(--secondaryColor);
   border-radius: 0.4rem;
   text-decoration: none;
@@ -53,6 +53,7 @@ body {
   padding: 1.6rem 2rem;
   background: var(--mainWhite);
   color: var(--primaryColor);
+  box-shadow: 0 0 1.2rem 0 rgba(29, 28, 28, 0.849);
 }
 
 /* .nav-header {
@@ -349,7 +350,7 @@ body {
 
 /***** invoice section *****/
 .invoice-section {
-  padding: 5rem 2rem;
+  padding: 15rem 2rem 5rem 2rem;
 }
 .invoice-section-center {
   max-width: 117rem;
@@ -365,7 +366,6 @@ body {
   background-color: var(--mainGrey);
   box-shadow: var(--main-shadow);
   border-radius: 0.5rem;
-  padding: rem;
 }
 .invoice-header {
   display: flex;
@@ -413,6 +413,24 @@ body {
   display: flex;
   padding: 4rem;
 }
+.invoice-subheader input[type='text'], input[type='date']{
+  border: none;
+  border-radius: .3rem;
+  padding: .5rem 1rem;
+  margin: .3rem 0;
+}
+.invoice-subheader textarea{
+  border: none;
+  border-radius: .3rem;
+  padding: .5rem 1rem;
+}
+.invoice-subheader select{
+  border: none;
+  border-radius: .3rem;
+  padding: .5rem 1rem;
+  background-color: var(--mainWhite);
+  margin: .3rem 0;
+}
 .invoice-client-address {
   flex: 1;
 }
@@ -440,6 +458,11 @@ body {
 .invoice-body-items {
   display: flex;
   padding: 1rem 4rem 1rem 4rem;
+}
+.invoice-body-items input[type=text], input[type=number]{
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  border: solid 1px var(--primaryColor);
 }
 .invoice-body-items:nth-child(odd) {
   background-color: var(--mainWhite);
