@@ -56,10 +56,6 @@ body {
   box-shadow: 0 0 1.2rem 0 rgba(29, 28, 28, 0.849);
 }
 
-/* .nav-header {
-  display: flex;
-  justify-content: space-between;
-} */
 .nav-btn {
   background: transparent;
   border: none;
@@ -114,17 +110,6 @@ body {
   text-transform: uppercase !important;
 }
 @media screen and (min-width: 768px) {
-  /* .navbar {
-    display: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    padding: 3rem 2rem;
-    background: transparent;
-    color: var(--primaryColor);
-  } */
-
   .navbar {
     position: fixed;
     top: 0;
@@ -139,8 +124,6 @@ body {
   .nav-center {
     max-width: 117rem;
     margin: 0 auto;
-    /* display: flex; */
-    /* justify-content: space-between; */
     align-items: center;
   }
 
@@ -175,15 +158,6 @@ body {
 
   /* end of added */
 
-  /* .nav-links {
-    height: auto;
-    display: flex;
-    color: var(--primaryColor);
-  }
-  .nav-links a {
-    padding: 1rem 0rem;
-    margin: 0 1rem;
-  } */
   .btn-small {
     padding: 1rem 4rem;
   }
@@ -285,7 +259,6 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  /* background: red; */
 }
 /***** end of hero *****/
 
@@ -314,14 +287,8 @@ body {
   max-width: 117rem;
   margin: 0 auto;
 }
-.invoice-section-container {
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-row-gap: 4rem;
-  grid-column-gap: 4rem; */
-}
+
 .invoice-content {
-  /* background-color: var(--mainGrey); */
   box-shadow: var(--main-shadow);
 }
 .invoice-header {
@@ -331,7 +298,6 @@ body {
   color: var(--mainWhite);
   padding: 4rem;
   flex-direction: column;
-  /* border-radius: 0.5rem 0.5rem 0 0; */
 }
 .invoice-title {
   flex: 1;
@@ -341,12 +307,7 @@ body {
   font-size: 6rem;
   text-transform: uppercase;
 }
-/* .invoice-title h3 {
-  padding: 0 !important;
-  margin: 0 !important;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-} */
+
 .invoice-header-address {
   flex: 3;
   display: flex;
@@ -374,28 +335,29 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.invoice-subheader input[type='text'], input[type='date']{
+.invoice-subheader input[type="text"],
+input[type="date"] {
   border: none;
-  border-radius: .3rem;
-  padding: .5rem 1rem;
-  margin: .3rem 0;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem 0;
   background-color: var(--mainGrey);
 }
-.invoice-subheader textarea{
+.invoice-subheader textarea {
   border: none;
-  border-radius: .3rem;
-  padding: .5rem 1rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
   background-color: var(--mainGrey);
 }
-.invoice-subheader select{
+.invoice-subheader select {
   border: none;
-  border-radius: .3rem;
-  padding: .5rem 1rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
   background-color: var(--mainWhite);
-  margin: .3rem 0;
+  margin: 0.3rem 0;
   background-color: var(--mainGrey);
 }
-.invoice-subheader label{
+.invoice-subheader label {
   color: var(--primaryColor);
   font-weight: bold;
 }
@@ -404,8 +366,6 @@ body {
 }
 .invoice-detail-content {
   flex: 3;
-  /* display: flex;
-  justify-content: flex-end; */
   text-align: right;
 }
 .invoice-body-header {
@@ -427,9 +387,10 @@ body {
   display: flex;
   padding: 1rem 4rem 1rem 4rem;
 }
-.invoice-body-items input[type=text], input[type=number]{
-  padding: .5rem 1rem;
-  border-radius: .3rem;
+.invoice-body-items input[type="text"],
+input[type="number"] {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
   border: solid 1px var(--primaryColor);
 }
 .invoice-body-items:nth-child(odd) {
@@ -450,15 +411,15 @@ body {
 .sales-agent h5 {
   color: orange;
 }
-.save-btn{
-  margin: 2rem  2rem 5rem 5rem ;
+.save-btn {
+  margin: 2rem 2rem 5rem 5rem;
   display: flex;
   justify-content: flex-end;
 }
-form button{
+form button {
   background-color: var(--primaryColor) !important;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .invoice-header {
     display: flex;
     justify-content: space-between;
@@ -466,7 +427,6 @@ form button{
     color: var(--mainWhite);
     padding: 4rem;
     flex-direction: row;
-    /* border-radius: 0.5rem 0.5rem 0 0; */
   }
   .invoice-subheader {
     display: flex;
@@ -522,6 +482,5 @@ form button{
   background-color: var(--mainWhite);
   width: 50%;
 }
-
 
 /***** end of modal   *****/
